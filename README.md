@@ -1,2 +1,2 @@
 # web
-# runing nginx server
+# runing nginx docker server
