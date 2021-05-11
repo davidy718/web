@@ -1,27 +1,62 @@
 <!DOCTYPE html> 
 <html> 
-<body> 
-<dl>
-	<dt>BigBuckBunny</dt>
-	<dd>
-		<a href="./web/BigBuckBunny/BigBuckBunny.html">
-		<img src="./web/BigBuckBunny/Big_buck_bunny.jpg" alt="HTML tutorial" style="width:330px;height:380px;">
-		</a>
-	</dd>
-	<dt>BigBuckBunny</dt>
-	<dd>
-		<video width="400" controls>
-			<source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
-			<source src="mov_bbb.ogg" type="video/ogg">
-			Your browser does not support HTML video.
-		</video>
-	</dd>
-</dl> 
-
-<p>
-Video courtesy of 
-<a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.
-</p>
-
-</body> 
+<body>
+<div>
+	<section class="listing-movies">
+		<figure>
+			<a href="./web/BigBuckBunny/BigBuckBunny.html">
+				<img src="./web/BigBuckBunny/Big_buck_bunny.jpg" alt="Big Buck Bunny" style="width:330px;height:380px;">
+			</a>
+			<figcaption>
+			<a href="./web/BigBuckBunny/BigBuckBunny.html"> Big Buck Bunny
+			</a>
+			</figcaption>
+		</figure>
+		
+		<figure>
+			<a href="https://mega.nz/file/EshHXCaD#B3btZbeFuxvgILJGSxiSUYvvmEVk-EuqKunAJSYWftQ">
+				<img src="./web/TheWolfofWallStreet/The_Wolf_of_Wall_Street.png" alt="The Wolf of Wall Street" style="width:330px;height:380px;">
+			</a>
+			<figcaption>
+			<a href="https://mega.nz/file/EshHXCaD#B3btZbeFuxvgILJGSxiSUYvvmEVk-EuqKunAJSYWftQ"> The Wolf of Wall Street
+			</a>
+			</figcaption>
+		</figure>
+		
+		<figure>
+			<a href="./web/BigBuckBunny/BigBuckBunny.html">
+				<img src="./web/BigBuckBunny/Big_buck_bunny.jpg" alt="Big Buck Bunny" style="width:330px;height:380px;">
+			</a>
+			<figcaption>
+			<a href="./web/BigBuckBunny/BigBuckBunny.html"> Big Buck Bunny
+			</a>
+			</figcaption>
+		</figure>
+	</section>
+</div>
+</body>
+<style>
+.listing-movies {
+display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+figure{
+	padding: 4px;
+	margin: auto;
+	background: #f7f7f7;
+}
+figcaption {
+    text-align: center;
+    background: #f7f7f7;
+    color: #666;
+    font-weight: 600;
+    max-height: 56px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+}
+	
+</style>
 </html>
